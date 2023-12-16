@@ -1,0 +1,48 @@
+$maxwidth: 1280px;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px){
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 767px){
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+.px35{
+    font-family: 'Akz';
+    font-weight: 300;
+    font-style: italic;
+    @include adaptiv-font(35, 13)
+}
+
+.px70{
+    @include adaptiv-font(70, 18)
+}
+
+.px45{
+    font-family: 'Akz';
+    font-weight: 700;
+    font-style: normal;
+    @include adaptiv-font(45, 15)
+}
+
+/*.px16{
+    font-family: 'Akz';
+    font-weight: 300;
+    font-style: normal;
+    @include adaptiv-font(16, 9)
+}
+*/
+
+.px30{
+
+    @include adaptiv-font(30, 10)
+}
+
+.px28{
+    @include adaptiv-font(28, 9)
+}
+
