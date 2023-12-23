@@ -17,9 +17,27 @@ html{
 
     text-transform: uppercase;
     color: #4C4C4C;
+    scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+    color: #4C4C4C;
+}
 
+a:hover{
+    font-weight: 700;
+}
+
+button{
+    font-family: 'Akz';
+    font-weight: 300;
+    font-style: italic;
+}
+
+button:hover{
+    background-color: #252424;
+}
 
 @font-face {
     font-family: 'Akz';
