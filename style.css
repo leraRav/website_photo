@@ -29,6 +29,10 @@ a:hover{
     font-weight: 700;
 }
 
+.padding-top{
+    padding-top: 10vh;
+}
+
 button{
     font-family: 'Akz';
     font-weight: 300;
@@ -305,6 +309,11 @@ hr{
     width: 21vw;
 }
 
+.gallery2 img{
+    width: 44vw;
+    object-fit: cover;
+}
+
 
 .button-more {
     display: flex;
@@ -471,7 +480,10 @@ hr{
     font-size: calc(9px + 7 * ((100vw - 320px) / (1280 - 320)));
 }
 
-
+.button-order:hover{
+    background-color: #252424;
+    font-weight: normal;
+}
 
 .fifth-block{
     display: flex;
